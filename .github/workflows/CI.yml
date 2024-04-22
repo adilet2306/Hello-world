@@ -27,4 +27,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           
       - name: Push image to Docker Hub
-        run: docker push my-image-name:latest
+        run: docker kaizenacademy/kaizen:1.0.0
