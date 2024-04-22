@@ -14,6 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Run pytest
+        run: pytest
+
       - name: Build Docker image
         run: docker build -t karabalta75/kaizen:1.0 .
 
